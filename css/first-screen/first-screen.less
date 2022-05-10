@@ -1,0 +1,77 @@
+.header-bg{
+    position: relative;
+    .bg-head{
+        padding-top:1px;
+        padding-bottom: 1px;
+        position: relative;
+        background-image: url("/img/rabochii-stol-notebook-soft.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center; 
+        
+    }
+    
+}
+.wrapper{
+    max-width: 1200px;
+    margin:0 auto;   
+}
+
+
+.greeting-wrap{
+    margin:120px auto 170px auto;
+}
+.greeting{
+    width:40%;
+    max-width:500px;
+    margin-left:auto;
+   
+    h1{
+        font-size: 35px;
+    };
+    p{
+        color:rgba(0, 0, 0, 0.452);
+        font-size:15px;
+        word-spacing: 8px;
+        margin:20px 0 30px 0;
+    }
+    .greeting-href{
+        border:0;
+        background-color:#10c9c3;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        color:white;
+        padding:12px 35px 12px 35px;
+        text-transform:uppercase;
+        font-size:12px;
+        line-height:25px;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+    .greeting-href:hover{
+        background-color:lighten(#10c9c3,5%);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .wrapper{max-width:970px}
+}
+@media  screen and (max-width:992px) {
+    .wrapper{max-width:750px}
+}
+@media screen and (max-width:767px) {
+    .wrapper{max-width: none;}
+    .navigation{display: none;}
+    .hamburger{display: block;}
+    .greeting{
+        margin-right:auto;
+        margin-left:30px;
+        width:50% ;
+        h1{font-size:25px}
+        p{font-size:13px}
+        .greeting-href{
+            padding:12px 25px 12px 25px;
+            font-size:11px;
+        }
+    }
+}

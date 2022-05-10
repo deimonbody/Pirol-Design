@@ -1,0 +1,94 @@
+.bg-positivs{
+    background-color: #10c9c3;
+    padding: 1px 0 1px 0;
+
+}
+.pos-wrap{
+  
+    margin-top:80px;
+    margin-bottom:80px;
+    display: flex;
+    justify-content: center;
+    .positiv{
+        min-width:140px;
+        display: flex;
+        width:23%;
+        color: white;
+        &:not(:last-child){
+            margin-right:20px;
+        }
+       
+        align-items: center;
+        p{
+            color:white;
+            text-transform: uppercase;
+            font-size:13px;
+            margin:5px 0 0 0;
+
+        }
+        h2{font-size:18px;}
+        img{
+            width:40px;
+            height:40px;
+            margin-right:20px;
+        }
+        .positiv-text{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .pos-wrap{
+        display: grid;
+        grid-template-areas: "project clock"
+                             "star heart";
+        grid-template-columns: 150px 150px;
+        column-gap:130px;
+        margin-left:30px;
+        
+        .star{grid-area: star;};
+        .heart{grid-area: heart;};
+        .project{grid-area:project};
+        .clock{grid-area:clock};
+        .positiv:last-child{
+            margin-right:20px ;
+        }
+        .positiv{
+            margin-bottom:30px;
+            
+        } 
+    }
+}
+@media screen and (max-width:575px){
+    
+    .pos-wrap{
+        .positiv{
+            p{font-size:11px;}
+            h2{font-size:16px;}
+            img{
+                width:30px;
+                height:30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:470px) {
+    .pos-wrap{
+        margin-left:0;
+        column-gap:40px;
+        .positiv{
+            margin-right:0;
+        }
+    }
+}
+
+@media screen and (max-width:355px){
+    .pos-wrap{
+        column-gap:10px;
+    }
+
+}

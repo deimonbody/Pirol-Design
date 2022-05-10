@@ -1,0 +1,106 @@
+.project-form {
+  padding: 1px 0 1px 0;
+  background-color: rgba(233, 233, 233, 0.664);
+}
+.project-form .form-wrapper {
+  margin-top: 80px;
+  max-width: 1000px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.project-form .form-wrapper p {
+  max-width: 600px;
+  margin-top: 40px;
+}
+.project-form .form-wrapper h2 {
+  font-size: 37px;
+}
+.form-project {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+.form-project input,
+.form-project textarea {
+  min-width: 200px;
+  border: 0;
+  background-color: white;
+  padding: 5px 0px 5px 15px;
+  height: 40px;
+  font-family: inherit;
+  outline: none;
+}
+.form-project input[type="submit"] {
+  padding: 10px 15px 10px 15px ;
+  background-color: #10c9c3;
+}
+.form-project input[type="submit"]:hover {
+  background-color: #1fede6;
+}
+.form-project textarea {
+  width: 100%;
+  height: 160px;
+  resize: none;
+}
+.form-project .project-title {
+  width: 100%;
+  margin: 30px 0 30px 0;
+}
+.form-project .project-name,
+.form-project .project-email {
+  flex-grow: 1;
+}
+.form-project .project-name {
+  margin-right: 35px;
+  min-width: 230px;
+}
+.project-btn {
+  margin-top: 30px;
+  background-color: #10c9c3;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.project-btn:hover {
+  background-color: #1fede6;
+}
+@media screen and (max-width: 710px) {
+  .project-form .form-wrapper h2 {
+    font-size: 25px;
+  }
+  .project-form .form-wrapper p {
+    font-size: 13px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-form .form-wrapper form {
+    flex-direction: column;
+  }
+  .project-form .form-wrapper .project-name {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .project-form .form-wrapper .project-name,
+  .project-form .form-wrapper .project-email {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 605px) {
+  .project-btn {
+    font-size: 11px;
+    padding: 5px 5px 5px 5px;
+  }
+}

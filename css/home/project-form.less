@@ -1,0 +1,106 @@
+.project-form{
+    padding:1px 0 1px 0;
+    background-color: rgba(233, 233, 233, 0.664);
+    .form-wrapper{
+        margin-top:80px;
+        max-width:1000px;
+        margin-bottom:100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        p{max-width:600px;margin-top:40px;}
+        h2{font-size:37px;}
+    }
+}
+
+.form-project{
+    width:70%;
+    display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                text-align:center;
+                margin-top:40px;
+                
+           
+            input,textarea{
+                min-width:200px;
+                border:0;
+                background-color: white;
+                padding:5px 0px 5px 15px;
+                height:40px;
+                 font-family: inherit;
+                outline: none;
+            }
+            
+            input[type="submit"]{
+                padding:10px 15px 10px 15px ;
+                background-color: #10c9c3;
+                &:hover{
+                    background-color:lighten(#10c9c3,10%);
+                }
+            }
+    
+            textarea{
+                width:100%;
+                height:160px;
+                resize: none;
+            }
+
+            .project-title{
+                width:100%;
+                margin:30px 0 30px 0;
+            }
+            .project-name,.project-email{
+                flex-grow: 1;
+            }
+            .project-name{
+                margin-right:35px;
+                min-width:230px;
+            }
+    
+}
+.project-btn{
+    margin-top:30px;
+    background-color: #10c9c3;
+    color:white;
+    border:0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size:13px;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out ;
+    &:hover{
+        background-color:lighten(#10c9c3,10%);
+    }
+}
+
+@media screen and (max-width:710px) {
+    .project-form{
+        .form-wrapper{
+            h2{font-size:25px;}
+            p{font-size:13px; width:85%;margin-left: auto; margin-right:auto}
+            form{flex-direction: column;}
+            .project-name{margin-right:0; margin-bottom:30px;}
+            .project-name,.project-email{width:100%;}
+        
+        }
+    }
+    
+}
+
+@media screen and (max-width:605px) {
+    .project-form{
+        .form-wrapper{
+            
+        
+        }
+    
+    }
+    .project-btn{
+        font-size:11px;
+        padding:5px 5px 5px 5px;
+    }
+}

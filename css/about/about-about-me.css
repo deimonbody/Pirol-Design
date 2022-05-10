@@ -1,0 +1,55 @@
+.about-me {
+  padding: 1px 0px 1px 0;
+  position: relative;
+  background-color: rgba(161, 161, 161, 0.07);
+}
+.about-me .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 200px 0 200px auto;
+  width: 45%;
+}
+.about-me .about-content h2 {
+  margin-bottom: 30px;
+  font-size: 27px;
+}
+.about-me .about-content p {
+  font-size: 15px;
+  line-height: 25px;
+}
+.about-me .about-content p:first-of-type {
+  margin-bottom: 30px;
+}
+.about-me .about-me-img {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url("/img/about/decor.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .about-me .about-content h2 {
+    font-size: 24px;
+  }
+  .about-me .about-content p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about-me .about-content {
+    width: 90%;
+    align-items: center;
+    margin-right: auto;
+  }
+  .about-me .about-content h2 {
+    text-align: center;
+  }
+  .about-me .about-me-img {
+    display: none;
+  }
+}

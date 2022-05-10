@@ -1,0 +1,102 @@
+.footer{
+    background-color: black;
+    padding:1px 0 1px 0;
+    .footer-wrap{
+        margin-top:90px;
+        margin-bottom:90px;
+        color:rgba(179, 179, 179, 0.534);
+        
+        display: flex;
+        justify-content: space-between;
+        
+        .project-name{
+            max-width:300px;
+            h2{
+                color:white;
+                font-size:20px;
+                margin-bottom:20px;
+            }
+            p{
+                color:inherit;
+                font-size:13px;
+            }
+        }
+
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding:0;
+            margin:0;
+            li{
+                font-size:13px;
+                &:not(:last-child){margin-bottom:5px}
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                text-shadow:0 0 5px #10c9c3;
+                color:#10c9c3;
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+                }
+            }
+            
+        }
+        .email{
+            max-width: 300px;
+            p{color:inherit;font-size:13px;}
+        }
+        .page-links{
+            width:100%;
+            max-width:160px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
+        .social-links{
+            max-width:200px;
+            margin-right:50px;
+
+            i{margin-right:8px;font-size:16px;}
+            li{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                
+
+            }
+        }
+    }
+}
+@media screen and(max-width:767px) {
+    .footer{
+
+        .footer-wrap{
+            width:90%;
+            margin:100px auto 100px auto;
+            
+           
+                .project-name{
+                    h2{font-size:23px;}
+                    p{font-size:11px;}
+                }
+            .page-links{display: none;}
+        }
+    
+    }
+
+}
+
+@media screen and(max-width:600px) {
+    .footer{
+        .footer-wrap{
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            .project-name{margin-right:25px; margin-bottom:35px;}
+            .email{margin-right:25px;margin-bottom:35px;}
+        }
+    }
+}

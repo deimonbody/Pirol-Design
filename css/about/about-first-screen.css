@@ -1,0 +1,38 @@
+.about.first-screen {
+  padding: 1px 0 1px 0;
+  background-image: url("/img/about/first-screen.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-first-screen-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 100;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.about-first-screen-wrap h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.about-first-screen-wrap p {
+  color: white;
+  font-size: 17px;
+  max-width: 540px;
+}
+.about-header {
+  background-color: white;
+}
+@media screen and (max-width: 600px) {
+  .about-first-screen-wrap h2 {
+    font-size: 25px;
+  }
+  .about-first-screen-wrap p {
+    font-size: 15px;
+  }
+}

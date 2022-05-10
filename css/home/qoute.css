@@ -1,0 +1,79 @@
+.quote-block {
+  background-color: #10c9c3;
+  color: white;
+  padding: 1px 0 1px 0;
+}
+.quote_wrap {
+  margin: 120px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.quote_wrap .qoutes {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.quote_wrap .qoutes-block {
+  display: flex;
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+.quote_wrap .qoute {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.quote_wrap .qoute p {
+  color: white;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.quote_wrap .qoute h2 {
+  max-width: 600px;
+  font-size: 20px;
+}
+.quote_wrap .quote-inputs {
+  display: flex;
+}
+.quote_wrap .quote-inputs div:not(:last-child) {
+  margin-right: 15px;
+}
+.quote_wrap .quote-inputs input {
+  display: none;
+}
+.quote_wrap .quote-inputs input:checked ~ label {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.quote_wrap .quote-inputs label {
+  display: block;
+}
+.quote_wrap .quote-inputs label:hover {
+  cursor: pointer;
+}
+.quote_wrap .quote-inputs label::before {
+  display: block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.705);
+}
+@media screen and (max-width: 767px) {
+  .quote_wrap .qoute h2 {
+    font-size: 17px;
+  }
+  .quote_wrap .qoute p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,123 @@
+.header {
+  margin: 20px  auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 50px;
+}
+.header .navigation {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+.header .navigation li {
+  color: black;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.header .navigation li a[data-active="true"] {
+  color: #0ccfc6;
+}
+.header .navigation li:not(:last-child) {
+  margin-right: 30px;
+}
+.header .hamburger {
+  text-align: center;
+  margin-right: 25px;
+  display: none;
+}
+.header .hamburger #menu__toggle {
+  opacity: 0;
+}
+.header .hamburger .menu__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  flex-direction: column;
+}
+.header .hamburger .menu__btn span,
+.header .hamburger .menu__btn span::before,
+.header .hamburger .menu__btn span::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: #616161;
+  width: 100%;
+  height: 2px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transform: rotate(0deg);
+  transition-property: transform;
+}
+.header .hamburger .menu__btn span::before {
+  top: 7px;
+}
+.header .hamburger .menu__btn span::after {
+  top: 14px;
+}
+.hamburger-menu {
+  display: none;
+}
+#menu__toggle:checked ~ .hamburger-menu {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.83);
+  z-index: 100;
+  padding-top: 30px;
+}
+#menu__toggle:checked ~ .hamburger-menu li {
+  font-size: 15px;
+}
+#menu__toggle:checked ~ .hamburger-menu li {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #0ccfc6;
+}
+#menu__toggle:checked ~ .menu__btn span {
+  z-index: 101;
+  background-color: transparent;
+}
+#menu__toggle:checked ~ .menu__btn span::before {
+  top: 7px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn span::after {
+  background-color: white;
+  top: 7px;
+  transform: rotate(-45deg);
+}
+.dis_btn {
+  overflow: hidden;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 767px) {
+  .header .logo {
+    margin-left: 25px;
+  }
+  .header .navigation {
+    display: none;
+  }
+  .header .hamburger {
+    display: block;
+  }
+}
